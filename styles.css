@@ -23,3 +23,42 @@ body {
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
 }
+
+h1, h2, h3, h4, button {
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+button:hover {
+    filter: brightness(120%);
+}
+
+.content, header {
+    max-width: 1240px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+header {
+    max-width: 1340px;
+}
+
+header .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .top-bar button {
+    height: 40px;
+    width: 150px;
+    border-radius: 30px;
+    border: 1px solid var(--color-pink);
+    color: var(--color-pink);
+    background-color: white;
+}
+
