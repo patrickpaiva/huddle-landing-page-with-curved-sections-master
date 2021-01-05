@@ -20,12 +20,14 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
+    color: var(--color-very-dark-cyan);
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
 }
 
 h1, h2, h3, h4, button {
     font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 
 button {
@@ -60,5 +62,78 @@ header .top-bar button {
     border: 1px solid var(--color-pink);
     color: var(--color-pink);
     background-color: white;
+}
+
+header .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .hero h1 {
+    font-size: 3.8rem;
+    margin-top: 100px;
+}
+
+header .hero p {
+    max-width: 600px;
+    margin-top: 20px;
+    font-size: 1.8rem;
+    line-height: 28px;
+    text-align: center;
+}
+
+header .hero button {
+    width: 250px;
+    height: 50px;
+    border: 0;
+    border-radius: 30px;
+    background-color:var(--color-pink);
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);
+    color:white;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+header .hero >img {
+    max-width: 800px;
+    object-fit: contain;
+    margin-top: 60px;
+}
+
+header .hero .counters {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header .hero .counters .counter {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    height: max-content;
+}
+
+header .hero .counters .counter img {
+    width: 40px;
+    align-self: flex-start;
+    justify-self: start;
+}
+
+header .hero .counters .counter p:nth-child(2) {
+    font-family: 'Poppins', sans-serif;
+    font-size: 7.2rem;
+    line-height: 6rem;
+    font-weight: 600;
+}
+
+header .hero .counters .counter p:nth-child(3) {
+    font-size: 1.6rem;
+    display: block;
+    opacity: 0.7;
 }
 
