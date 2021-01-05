@@ -362,3 +362,34 @@ footer .footer-attribution .attribution a:hover {
         width: 100%;
     }
 }
+
+@media (max-width: 560px) {
+    header {
+        background-image: url('/images/bg-section-top-mobile-1.svg');
+    }
+
+    
+    section .content {
+        flex-direction: column;
+        row-gap: 40px;
+        justify-content: center;
+        height: 800px;
+    }
+    
+    section .content .section-text {
+        max-width: 80vw;
+        text-align: center;
+    }
+    
+    section .content img {
+        max-width: 50vw;
+    }
+    
+    section#flowing-conversation {
+        background-image: url('/images/bg-section-bottom-mobile-1.svg'), url('/images/bg-section-top-mobile-2.svg');
+    }
+
+    .ready-to-build {
+        background-image: url('/images/bg-section-bottom-mobile-2.svg'), url('/images/bg-footer-top-mobile.svg');
+    }
+}
