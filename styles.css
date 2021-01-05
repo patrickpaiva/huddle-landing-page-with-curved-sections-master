@@ -82,6 +82,7 @@ header .hero {
 header .hero h1 {
     font-size: 3.8rem;
     margin-top: 100px;
+    text-align: center;
 }
 
 header .hero p {
@@ -299,7 +300,8 @@ footer .content .newsletter .subscribe {
 
 footer .content .newsletter input {
     height: 40px;
-    width: 300px;
+    width: 65%;
+    min-width: 200px;
     border: none;
     border-radius: 4px;
     background-color: white;
@@ -312,6 +314,7 @@ footer .content .newsletter button {
     border: none;
     border-radius: 4px;
     color: white;
+    align-self: flex-end;
 }
 
 footer .footer-attribution .attribution { 
@@ -321,10 +324,41 @@ footer .footer-attribution .attribution {
 }
 
 footer .footer-attribution .attribution a { 
-    color: hsl(300, 69%, 71%);
+    color: var(--color-light-pink);
     text-decoration: none; 
 }
 
 footer .footer-attribution .attribution a:hover {
     opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+
+    header .header-content .hero >img {
+        max-width: 90vw;
+    }
+
+    footer .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .content .newsletter {
+        order: -1;
+        margin-bottom: 40px;
+        min-width: 280px;
+    }
+
+    footer .content .newsletter .subscribe {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 20px;
+    }
+
+    footer .content .newsletter .subscribe input {
+        width: 100%;
+    }
 }
