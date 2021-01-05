@@ -226,3 +226,105 @@ footer {
     color: white;
 }
 
+footer .content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+footer .content .footer-content {
+    max-width: 400px;
+}
+
+footer .content .footer-content >p {
+    font-weight: 600;
+    max-width: 280px;
+    font-size: 1.3rem;
+    line-height: 20px;
+    margin: 20px 0;
+}
+
+footer .content .footer-content .contacts {
+    max-width: 320px;
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    gap: 20px;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+footer .content .footer-content .social-media {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    margin-top: 60px;
+}
+
+footer .content .footer-content .social-media .media {
+    font-size: 36px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+footer .content .footer-content .social-media .media:hover {
+    color: hsl(192, 94%, 41%);
+}
+
+
+footer .content .newsletter {
+    width: 40%;
+}
+
+footer .content .newsletter h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+footer .content .newsletter p {
+    font-weight: 600;
+    max-width: 320px;
+    font-size: 1.3rem;
+    line-height: 20px;
+    margin: 20px 0;
+}
+
+footer .content .newsletter .subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .content .newsletter input {
+    height: 40px;
+    width: 300px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+}
+
+footer .content .newsletter button {
+    height: 40px;
+    width: 150px;
+    background-color: var(--color-pink);
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+footer .footer-attribution .attribution { 
+    font-size: 11px; 
+    text-align: center;
+    color: white; 
+}
+
+footer .footer-attribution .attribution a { 
+    color: hsl(300, 69%, 71%);
+    text-decoration: none; 
+}
+
+footer .footer-attribution .attribution a:hover {
+    opacity: 0.7;
+}
