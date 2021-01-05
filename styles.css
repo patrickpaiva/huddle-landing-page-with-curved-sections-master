@@ -393,3 +393,21 @@ footer .footer-attribution .attribution a:hover {
         background-image: url('/images/bg-section-bottom-mobile-2.svg'), url('/images/bg-footer-top-mobile.svg');
     }
 }
+
+@media (max-width: 425px) {
+    header .top-bar >img {
+        max-width: 130px;
+    }
+
+    header .top-bar button {
+        max-width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    header .hero .counters {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
